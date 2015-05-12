@@ -1,15 +1,19 @@
-var button = $('button');
-
-
 $(document).ready(function(){
-  for(var i = 0; i < 1; i++){
-    $('.box').on("click", function(){
-      if ('.box' % 2 === 0){
-        ($(this).append('x'))
-       // console.log($(this).attr('name'))
-      }else {
+  var boxes = $('.box');
+  var count = 0;
+  var win = '';
+  var result = ('','');
+  $('.box').on("click", function(){
+      count++;
+      if (count % 2 === 0) {
         ($(this).append('o'))
-      }
-    })
+      } else {
+        ($(this).append('x'))
+      } 
+    checkForWin();
+  }) 
+  function checkForWin() {
+    result = $('.box').text()
+   debugger;
   }
 })
