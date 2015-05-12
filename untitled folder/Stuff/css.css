@@ -13,3 +13,7 @@ button {
   text-decoration: none;
   margin: 10px;
 }
+
+.red-cell {
+   background: blue;
+}
