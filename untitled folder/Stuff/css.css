@@ -1,0 +1,15 @@
+button {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 3px;
+  font-family: Courier New;
+  color: #000000;
+  font-size: 50px;
+  width: 190px;
+  height: 110px;
+  background: #ffffff;
+  padding: 30px 5px 30px 5px;
+  border: solid #000000 4px;
+  text-decoration: none;
+  margin: 10px;
+}
