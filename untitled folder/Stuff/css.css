@@ -1,19 +1,53 @@
+body {
+  text-align: center;
+  background-image: url("http://www.nedhardy.com/wp-content/uploads/images/2011/november/heaven_vs_hell.jpg");
+  background-size: 141%, 10%, 10%;
+}
+h3 {
+
+}
+
 button.box {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 3px;
   font-family: Courier New;
-  color: #000000;
   font-size: 50px;
-  width: 190px;
-  height: 110px;
-  background: #ffffff;
-  padding: 30px 5px 30px 5px;
-  border: solid #000000 4px;
+  width: 200px;
+  height: 200px;
+  background: rgba(192,192,192,0.3);
+  padding: 65px 30px 65px 30px;
   text-decoration: none;
   margin: 10px;
+  vertical-align: top;
+  display: inline;
+  z-index: 1;
 }
 
-button.reset {
+button.again {
  font-size: 50px;
+ border-radius: 10px;
+ width: 300px;
+ height: 100px;
+
+}
+button.again:hover{
+  transform:  translateX(140px) rotate(10deg) translateY(-40px);
+}
+.win {
+  z-index: 2;
+}
+
+.pic1 {
+  width: 150px;
+  line-height: 200px;
+  display: inline;
+
+}
+.pic2 {
+  width: 120px;
+  display: inline;
+}
+.win {
+  
 }
