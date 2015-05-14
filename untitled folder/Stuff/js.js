@@ -21,20 +21,17 @@ function getMoves() {
 function checkWin() {
   $.each(winCombo, function(index, value){
     if (result[value[0]]==result[value[1]] && result[value[1]]==result[value[2]]){
-      $('.box').off();
+      // $('.box').off();
         if (result[value[0]] == 'X'){
           $('.winSleep').addClass('sleepWin');
-            $('.header').addClass('header1');            
+          $('.header').addClass('header1');
         } else {
             $('.winBeer').addClass('beerWin');
-            $('.header').addClass('header1');
-            // $('.header').removeClass
+            $('.header').addClass('header1'); 
         }
     } else if (count === 9){
       console.log('ty');
-    }  else {
-      console.log('dawg')
-    }
+    } 
   })
 } 
 $('.again').on("click", function(){
@@ -46,4 +43,7 @@ $('.again').on("click", function(){
         butt.children[0].remove();
       }
     })
+    $("h1").removeClass("header1");
+    $(".winSleep").removeClass("sleepWin")
+    $(".winBeer").removeClass("beerWin")
 }) 
