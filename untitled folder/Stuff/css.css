@@ -3,8 +3,11 @@ body {
   background-image: url("http://www.nedhardy.com/wp-content/uploads/images/2011/november/heaven_vs_hell.jpg");
   background-size: 141%, 10%, 10%;
 }
-h3 {
-
+.header {
+  display: initial;
+}
+.header1 {
+  display: none;
 }
 
 button.box {
@@ -48,6 +51,18 @@ button.again:hover{
   width: 120px;
   display: inline;
 }
-.win {
-  
+.winSleep {
+  display: none;
 }
+.sleepWin {
+  display: initial;
+}
+.winBeer {
+  display: none;
+}
+.beerWin {
+  display: initial;
+}
+
+
+

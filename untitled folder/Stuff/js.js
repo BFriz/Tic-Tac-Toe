@@ -23,11 +23,13 @@ function checkWin() {
     if (result[value[0]]==result[value[1]] && result[value[1]]==result[value[2]]){
       $('.box').off();
         if (result[value[0]] == 'X'){
-            
+          $('.winSleep').addClass('sleepWin');
+            $('.header').addClass('header1');            
         } else {
-            prompt('beer')
+            $('.winBeer').addClass('beerWin');
+            $('.header').addClass('header1');
+            // $('.header').removeClass
         }
-        debugger;
     } else if (count === 9){
       console.log('ty');
     }  else {
