@@ -27,13 +27,13 @@ function checkWin() {
         if (result[value[0]] == 'X'){
           $('.winSleep').addClass('sleepWin');
           $('.header').addClass('header1');
-        } else {
-            $('.winBeer').addClass('beerWin');
-            $('.header').addClass('header1'); 
+        }else {
+          $('.winBeer').addClass('beerWin');
+          $('.header').addClass('header1'); 
         }
-    } else if (count === 9){
-      $('.winTy').addClass('tyWin');
-      $('.header').addClass('header1');
+        } else if (count === 9){
+          $('.winTy').addClass('tyWin');
+          $('.header').addClass('header1');
     } 
   })
 } 
