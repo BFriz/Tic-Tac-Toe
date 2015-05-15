@@ -8,9 +8,16 @@ body {
 }
 .header {
   display: initial;
+  text-shadow: #fff 0 0 100px;
+  font-size: 40px;
+  font-family: 'Indie Flower', cursive;
 }
 .header1 {
   display: none;
+}
+
+p {
+  height: 10px;
 }
 
 button.box {
@@ -48,7 +55,6 @@ button.again:hover{
   width: 150px;
   line-height: 200px;
   display: inline;
-
 }
 .pic2 {
   width: 120px;
@@ -58,14 +64,24 @@ button.again:hover{
   display: none;
 }
 .sleepWin {
+  font-size: 40px;
   display: initial;
+  font-family: 'Indie Flower', cursive;
 }
 .winBeer {
   display: none;
 }
 .beerWin {
+  font-size: 40px;
   display: initial;
+  font-family: 'Indie Flower', cursive;
 }
-
-
+.winTy {
+  display: none;
+}
+.tyWin {
+  font-size: 40px;
+  display: initial;
+  font-family: 'Indie Flower', cursive;
+}
 

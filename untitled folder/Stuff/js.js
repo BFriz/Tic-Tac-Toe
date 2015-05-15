@@ -1,8 +1,10 @@
   var count = 0;
   var result = ['0','1','2','3','4','5','6','7','8'];
   var winCombo = [[0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8],[0,4,8], [2,4,6]]
-
+eventListener(); 
+function eventListener(){
 $('.box').on("click", getMoves);
+}
 function getMoves() {
   if ($(this).html() === ''){
     if ((count % 2) === 0) {
@@ -21,7 +23,7 @@ function getMoves() {
 function checkWin() {
   $.each(winCombo, function(index, value){
     if (result[value[0]]==result[value[1]] && result[value[1]]==result[value[2]]){
-      // $('.box').off();
+      $('.box').off();
         if (result[value[0]] == 'X'){
           $('.winSleep').addClass('sleepWin');
           $('.header').addClass('header1');
@@ -30,7 +32,8 @@ function checkWin() {
             $('.header').addClass('header1'); 
         }
     } else if (count === 9){
-      console.log('ty');
+      $('.winTy').addClass('tyWin');
+      $('.header').addClass('header1');
     } 
   })
 } 
@@ -43,7 +46,9 @@ $('.again').on("click", function(){
         butt.children[0].remove();
       }
     })
-    $("h1").removeClass("header1");
+    $("h2").removeClass("header1");
     $(".winSleep").removeClass("sleepWin")
     $(".winBeer").removeClass("beerWin")
+    $(".winTy").removeClass("tyWin")
+    eventListener();
 }) 
